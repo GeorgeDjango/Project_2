@@ -1,0 +1,256 @@
+:root {
+    background-color:rgb(233,200,200);
+    font-size: 50%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:rgb(233,200,200);
+}
+
+p{
+    font-size: 2rem;
+    color:rgb(196,151,151);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 1rem;
+    color:rgb(196,151,151) ;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color:rgb(199,110,110) ;
+    margin-bottom: 5rem;
+}
+
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+li {
+    color: rgb(196,151,151);
+}
+
+header {
+    height: 6.1rem;
+    position:sticky;
+    width: 100%;
+    background-color: rgb(199,110,110);
+    justify-content: center;
+    padding: 0.8rem;
+}
+
+footer {
+    height: 6.3rem;
+    position:sticky;
+    width: 100%;
+    background-color: rgb(199,110,110);
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+#footer-help {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid rgb(199,110,110);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(199,110,110);
+    background-color:rgb(233,200,200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(233,200,200);
+    font-size: 4.2rem;
+}
+
+#footer-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(233,200,200);
+    font-size: 4.2rem;
+}
+
+#footer-button:hover {
+    cursor: pointer;
+}
+
+/* Utilities */
+
+.container {
+    width: 100vw;
+    height: 88vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+@media screen {
+    
+}
+
+
+.container > * {
+    width: 100%;
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Buttons */
+
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid rgb(199,110,110);
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(199,110,110);
+    background-color:lavenderblush;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0  dimgray;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+
+/* forms */
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    
+  }
+  input:hover {
+    box-shadow: 0 0.4rem 1.4rem 0  rgb(148,161,161);
+  }
+  
+  input::placeholder {
+    color: rgb(118,172,173);
+  }
+
+
+/* help */
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: lavenderblush;
+    width: 450px;
+    height: 220px;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background: rgb(199,110,110);
+    color: lavenderblush;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: 800ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
