@@ -1,14 +1,11 @@
-function togglePopup(){
+const togglePopup = () => {
   document.getElementById("popup-1").classList.toggle("active");
 }
 
-if(localStorage.getItem("count_timer")){
-  var count_timer = localStorage.getItem("count_timer");
-} else {
-  var count_timer = 60*2;
-}
-var minutes = parseInt(count_timer/60);
-var seconds = parseInt(count_timer%60);
+let count_timer = 120;
+
+let minutes = parseInt(count_timer/60);
+let seconds = parseInt(count_timer%60);
 function countDownTimer(){
   if(seconds < 10){
       seconds= "0"+ seconds ;
@@ -18,7 +15,8 @@ function countDownTimer(){
   
   document.getElementById("total-time-left").innerHTML = ""+minutes+":"+seconds+"" ;
   if(count_timer <= 0){
-       localStorage.clear("count_timer");
+      count_timer = 120;
+      window.location.href = "/index.html";
   } 
   else {
       count_timer = count_timer -1 ;

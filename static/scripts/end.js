@@ -1,4 +1,4 @@
-function togglePopup(){
+const togglePopup = () => {
     document.getElementById("popup-1").classList.toggle("active");
 }
 
@@ -17,7 +17,7 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
-saveHighScore = (e) => {
+const saveHighScore = (e) => {
     e.preventDefault();
 
     const score = {
