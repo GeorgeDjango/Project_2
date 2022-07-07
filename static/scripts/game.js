@@ -16,7 +16,7 @@ function countDownTimer(){
   document.getElementById("total-time-left").innerHTML = ""+minutes+":"+seconds+"" ;
   if(count_timer <= 0){
       count_timer = 120;
-      window.location.href = "/index.html";
+      window.location.href = "../../index.html";
   } 
   else {
       count_timer = count_timer -1 ;
@@ -146,7 +146,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
-        return window.location.assign('../pages/end.html');
+        return window.location.assign('../../static/pages/end.html');
     }
 
     questionCounter++;
