@@ -1,5 +1,3 @@
-![imageName](/static/images/logo.png)
-
 # README
 
 Welcome to the **README.md** for my drum quiz.
