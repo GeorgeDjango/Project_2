@@ -65,7 +65,7 @@ Upon completing the ten questions, the user will be taken to then end.html page,
 - Bootstrap icons has been used to give some of my buttons a bit more style.
 
 4. JavaScript
-- Java has been used to help give my project some "brains" which has allowed me to build my quiz across various pages.
+- JavaScript has been used to help give my project some "brains" which has allowed me to build my quiz across various pages.
 
 5. Git
 - I have used Git to help me push my project from my local device to an online repo.
