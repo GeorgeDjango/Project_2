@@ -40,5 +40,74 @@ Upon completing the ten questions, the user will be taken to then end.html page,
 - Answers - As the user hovers over each question they will be highlighted with a shadow to aid the user in knowing which questions they have the cursor pointed at. The questions are also highlighted for a couple of seconds in green, or red, depending on wether the user is correct. If they are, ten points will be added to their total.
 
 4. end.html:
+- Username input - Here the user will be able to insert their chosen name to register their score locally.
+- Buttons are highlighted - When highlighted a shadow will surround the button to help the user identify more clearly where the cursor is located.
+- Save button - Initially the save button is disabled until a name is inserted, then the user clicks save to save their name and score, this will then take them to the Highscores page (highscores.html)
+- Play again button - Once clicked the user will be taken back to the first question on the quiz (game.html).
+- Home button - Once clicked the user will be taken back to the home page (index.html).
+
+5. highscores.html:
+- Scores - Here the user can see all the locally saved usernames and highscores.
+- Go home button - Once clicked the user will be taken back to the home page (index.html).
 
 
+## Tech
+
+---
+
+1. HTML: 
+- HTML5 has been used to create the skeleton of my quiz.
+
+2. CSS:
+- CSS has been used to style my quiz to make it aesthetically appealing.
+
+3. Bootstrap icons
+- Bootstrap icons has been used to give some of my buttons a bit more style.
+
+4. JavaScript
+- Java has been used to help give my project some "brains" which has allowed me to build my quiz across various pages.
+
+5. Git
+- I have used Git to help me push my project from my local device to an online repo.
+
+6. Github
+- I have used Github for hosting my online repo.
+
+---
+
+## Deployment
+The hosting platform that I've used for my project is GitHub Pages. To deploy my website to GitHub pages, I used the following steps:
+- Loaded the terminal window in my Visual Studio Code workspace.
+- Initialised Git using the git init command.
+- Added all files to the Staging area (Git) using the git add . command.
+- Committed the files to Git using the git commit -m "Initial commit" command.
+- Created a new repository in GitHub called 'Project_2'.
+- Copied the below code from GitHub into the terminal window in my Visual Studio Code workspace:
+- git remote add origin https://github.com/GeorgeDjango/Project_2
+- git push -u origin master
+- Entered my GitHub username and password to push the files from Git to GitHub.
+- Went into 'Settings' on my repository page in GitHub.
+- Selected the 'master branch' option under the 'GitHub Pages' section.
+- Ran several regular commits throughout my project.
+
+### Live Repo
+ https://georgedjango.github.io/Project_2/
+ 
+### Opening Code On Local Device
+To run my code locally, users can download a local copy of my code to their desktop by completing the following steps:
+
+1. Go to my GitHub repo.
+2. Click 'Clone or download'.
+3. Click 'Download ZIP'.
+4. Open the zip files and open 'index.html'.
+
+
+## Credits 
+
+---
+
+### Media
+- All content was made by myself.
+
+### Acknowledgements
+- I took inspiration from various online quizzes for structure.
